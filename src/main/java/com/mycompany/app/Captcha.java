@@ -5,15 +5,19 @@ public class Captcha {
   private int leftOperand;
   private int rightOperand;
   private int operator;
+  private int pattern;
 
   public Captcha(int pattern, int leftOperand, int operator, int rightOperand) {
     this.leftOperand = leftOperand;
     this.rightOperand = rightOperand;
     this.operator = operator;
+    this.pattern = pattern;
   }
 
   public String getLeft() {
-    return String.valueOf(this.leftOperand);
+    if(this.pattern == 1)
+      return String.valueOf(this.leftOperand);
+    return "One";
   }
 
   public String getRight() {
