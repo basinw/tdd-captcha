@@ -2,11 +2,15 @@ package com.mycompany.app;
 
 public class Captcha {
 
-  public Captcha(int pattern, int leftOperand, int operator, int rightOperand) {
+  private int leftOperand;
 
+  public Captcha(int pattern, int leftOperand, int operator, int rightOperand) {
+    this.leftOperand = leftOperand;
   }
 
   public String getLeft() {
-    return "1";
+    if(this.leftOperand == 1)
+      return "1";
+    return "9";
   }
 }
