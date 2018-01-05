@@ -13,6 +13,12 @@ public class CaptchaTest {
   }
 
   @Test
+  public void leftOperandShouldBe_5() {
+    Captcha captcha = new Captcha(1, 5, 1, 1);
+    assertEquals("5", captcha.getLeft());
+  }
+
+  @Test
   public void leftOperandShouldBe_9() {
     Captcha captcha = new Captcha(1, 9, 1, 1);
     assertEquals("9", captcha.getLeft());
