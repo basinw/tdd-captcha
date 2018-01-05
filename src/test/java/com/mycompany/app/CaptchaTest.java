@@ -13,6 +13,12 @@ public class CaptchaTest {
   }
 
   @Test
+  public void secondPatternLeftOperandShouldBeTwo() {
+    Captcha captcha = new Captcha(2, 9 ,1, 1);
+    assertEquals("Nine", captcha.getLeft());
+  }
+
+  @Test
   public void operatorShouldBePlus() {
     Captcha captcha = new Captcha(1,1,1,1);
     assertEquals("+", captcha.getOperator());
