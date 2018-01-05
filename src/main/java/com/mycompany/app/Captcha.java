@@ -22,8 +22,7 @@ public class Captcha {
   }
 
   public String getRight() {
-    String[] numericString = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
-    return numericString[this.rightOperand - 1];
+    return this.numericString[this.rightOperand - 1];
   }
 
   public String getOperator() {
