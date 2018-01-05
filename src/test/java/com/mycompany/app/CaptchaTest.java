@@ -8,7 +8,7 @@ public class CaptchaTest {
 
   @Test
   public void secondPatternRightOperandShouldBe_1() {
-    Captcha captcha = new Captcha(2, 1, 1, 2);
+    Captcha captcha = new Captcha(2, 1, 1, 1);
     assertEquals("1", captcha.getRight());
   }
 

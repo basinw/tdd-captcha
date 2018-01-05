@@ -24,7 +24,9 @@ public class Captcha {
   public String getRight() {
     if(this.pattern == 1)
       return this.numericString[this.rightOperand - 1];
-    return "1";
+    if(this.rightOperand == 1)
+      return "1";
+    return "9";
   }
 
   public String getOperator() {
