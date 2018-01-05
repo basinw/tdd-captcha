@@ -15,8 +15,9 @@ public class Captcha {
   }
 
   public String getRight() {
+    String[] numericString = {"One"};
     if(this.rightOperand == 1)
-      return "One";
+      return numericString[this.rightOperand - 1];
     if(this.rightOperand == 5)
       return "Five";
     return "Nine";
