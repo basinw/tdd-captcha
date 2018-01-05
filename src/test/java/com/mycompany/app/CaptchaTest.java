@@ -11,4 +11,10 @@ public class CaptchaTest {
     Captcha captcha = new Captcha(1, 1, 1, 1);
     assertEquals("1", captcha.getLeft());
   }
+
+  @Test
+  public void leftOperandShouldBe_9() {
+    Captcha captcha = new Captcha(1, 9, 1, 1);
+    assertEquals("9", captcha.getLeft());
+  }
 }
