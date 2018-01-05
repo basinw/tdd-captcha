@@ -28,7 +28,7 @@ public class Captcha {
       return "1";
     if(this.rightOperand == 5)
       return "5";
-    return "9";
+    return String.valueOf(this.rightOperand);
   }
 
   public String getOperator() {
