@@ -22,11 +22,7 @@ public class Captcha {
   }
 
   public String getOperator() {
-    String[] operatorSign = {"+", "", "*"};
-    if(this.operator == 2)
-      return "-";
-    if(this.operator == 3)
-      return operatorSign[this.operator - 1];
+    String[] operatorSign = {"+", "-", "*"};
     return operatorSign[this.operator - 1];
   }
 }
