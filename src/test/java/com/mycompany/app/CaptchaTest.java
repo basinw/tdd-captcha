@@ -13,6 +13,12 @@ public class CaptchaTest {
   }
 
   @Test
+  public void operatorShouldBeMinus() {
+    Captcha captcha = new Captcha(1,1,2,1);
+    assertEquals("-", captcha.getOperator());
+  }
+
+  @Test
   public void rightOperandShouldBeOne() {
     Captcha captcha = new Captcha(1,1,1,1);
     assertEquals("One", captcha.getRight());
