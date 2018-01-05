@@ -3,9 +3,11 @@ package com.mycompany.app;
 public class Captcha {
 
   private int leftOperand;
+  private int rightOperand;
 
   public Captcha(int pattern, int leftOperand, int operator, int rightOperand) {
     this.leftOperand = leftOperand;
+    this.rightOperand = rightOperand;
   }
 
   public String getLeft() {
@@ -13,6 +15,8 @@ public class Captcha {
   }
 
   public String getRight() {
-    return "One";
+    if(this.rightOperand == 1)
+      return "One";
+    return "Nine";
   }
 }
