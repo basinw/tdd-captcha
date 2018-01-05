@@ -20,6 +20,6 @@ public class Captcha {
   }
 
   public String getOperator() {
-    return null;
+    return "+";
   }
 }
