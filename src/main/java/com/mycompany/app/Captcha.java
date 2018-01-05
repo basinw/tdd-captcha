@@ -6,6 +6,7 @@ public class Captcha {
   private int rightOperand;
   private int operator;
   private int pattern;
+  String[] numericString = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
 
   public Captcha(int pattern, int leftOperand, int operator, int rightOperand) {
     this.leftOperand = leftOperand;
@@ -15,10 +16,9 @@ public class Captcha {
   }
 
   public String getLeft() {
-    String[] numericString = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
     if(this.pattern == 1)
       return String.valueOf(this.leftOperand);
-    return numericString[this.leftOperand - 1];
+    return this.numericString[this.leftOperand - 1];
   }
 
   public String getRight() {
