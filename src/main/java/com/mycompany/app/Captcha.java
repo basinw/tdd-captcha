@@ -22,7 +22,9 @@ public class Captcha {
   }
 
   public String getRight() {
-    return this.numericString[this.rightOperand - 1];
+    if(this.pattern == 1)
+      return this.numericString[this.rightOperand - 1];
+    return "1";
   }
 
   public String getOperator() {
