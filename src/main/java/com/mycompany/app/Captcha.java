@@ -7,6 +7,6 @@ public class Captcha {
   }
 
   public String getLeft() {
-    return null;
+    return "1";
   }
 }
