@@ -9,10 +9,6 @@ public class Captcha {
   }
 
   public String getLeft() {
-    if(this.leftOperand == 1)
-      return String.valueOf(this.leftOperand);
-    if(this.leftOperand == 5)
-      return String.valueOf(this.leftOperand);
     return String.valueOf(this.leftOperand);
   }
 }
