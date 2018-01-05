@@ -13,6 +13,12 @@ public class CaptchaTest {
   }
 
   @Test
+  public void secondPatternRightOperandShouldBe_5() {
+    Captcha captcha = new Captcha(2, 1, 1, 5);
+    assertEquals("5", captcha.getRight());
+  }
+
+  @Test
   public void secondPatternRightOperandShouldBe_9() {
     Captcha captcha = new Captcha(2, 1, 1, 9);
     assertEquals("9", captcha.getRight());
