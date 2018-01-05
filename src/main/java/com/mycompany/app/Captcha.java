@@ -19,6 +19,8 @@ public class Captcha {
       return String.valueOf(this.leftOperand);
     if(this.leftOperand == 1)
       return "One";
+    if(this.leftOperand == 5)
+      return "Five";
     return "Nine";
   }
 
