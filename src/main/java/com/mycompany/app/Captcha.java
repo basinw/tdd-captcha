@@ -15,13 +15,10 @@ public class Captcha {
   }
 
   public String getLeft() {
+    String[] numericString = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
     if(this.pattern == 1)
       return String.valueOf(this.leftOperand);
-    if(this.leftOperand == 1)
-      return "One";
-    if(this.leftOperand == 5)
-      return "Five";
-    return "Nine";
+    return numericString[this.leftOperand - 1];
   }
 
   public String getRight() {
