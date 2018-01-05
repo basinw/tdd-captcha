@@ -17,7 +17,9 @@ public class Captcha {
   public String getLeft() {
     if(this.pattern == 1)
       return String.valueOf(this.leftOperand);
-    return "One";
+    if(this.leftOperand == 1)
+      return "One";
+    return "Nine";
   }
 
   public String getRight() {
