@@ -15,7 +15,7 @@ public class CaptchaTest {
   @Test
   public void rightOperandShouldBeFive() {
     Captcha captcha = new Captcha(1,1,1,5);
-    assertEquals("5", captcha.getRight());
+    assertEquals("Five", captcha.getRight());
   }
 
   @Test

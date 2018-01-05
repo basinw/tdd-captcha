@@ -17,6 +17,8 @@ public class Captcha {
   public String getRight() {
     if(this.rightOperand == 1)
       return "One";
+    if(this.rightOperand == 5)
+      return "Five";
     return "Nine";
   }
 }
