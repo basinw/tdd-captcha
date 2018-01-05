@@ -18,4 +18,8 @@ public class Captcha {
     String[] numericString = {"One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
     return numericString[this.rightOperand - 1];
   }
+
+  public String getOperator() {
+    return null;
+  }
 }

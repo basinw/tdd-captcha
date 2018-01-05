@@ -7,6 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CaptchaTest {
 
   @Test
+  public void operatorShouldBePlus() {
+    Captcha captcha = new Captcha(1,1,1,1);
+    assertEquals("+", captcha.getOperator());
+  }
+
+  @Test
   public void rightOperandShouldBeOne() {
     Captcha captcha = new Captcha(1,1,1,1);
     assertEquals("One", captcha.getRight());
